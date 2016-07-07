@@ -9,7 +9,8 @@ var CountryView = Backbone.View.extend({
 
 	initialize: function () {
 		this.descView = new DescriptionView({
-			model: this.model
+			model: this.model,
+			collection: this.collection
 		});
 	},
 

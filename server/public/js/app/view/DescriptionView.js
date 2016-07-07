@@ -6,10 +6,10 @@ var DescriptionView = Backbone.View.extend({
 		// 'click .edit': 'editCountry'
 	},
 
-	deleteCountry: function () {
-		this.model.destroy({
+	deleteCountry: function () {		
+		this.model.destroy({url: this.model.url + '/' + this.model.id});
 
-		});
+		this.collection.fetch({reset: true});
 	},
 
 	render: function () {

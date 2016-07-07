@@ -8,15 +8,13 @@ var AddView = Backbone.View.extend({
 	},	
 
 	addCountry: function() {
-		let input = {
-			'id': String(this.collection.length + 1)
-		};
+		let input = {};
 
 		$("input").val((i, val) => {
 			input[$('input').eq(i).attr('name')] = validateInformation(val);
 		});
 
-		dir(input);
+		this.collection.create(input);
 
 		mediator.pub('addCountry', input);
 	},

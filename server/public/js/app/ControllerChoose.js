@@ -8,18 +8,8 @@ function ControllerChoose () {
 		});
 
 	mediator.sub('addCountry', (country) => {
-		Collection.create(country);
+		// Alert when we successfully added country
 	});
-
-	// setTimeout(() => {
-	// 		var newAdd = Collection.create({
-	// 			id: '3',
-	// 		    Name: 'UK6',
-	// 		    Capital: 'London',
-	// 		    Continent: 'Europe',
-	// 		    Population: 7676
-	// 		});
-	// 	}, 2000);
 
 	return this;
 }

@@ -7,12 +7,19 @@ var ListView = Backbone.View.extend({
     	this.collection.fetch({reset: true});
 
     	this.collection.on("reset", this.render, this);
+
     	this.collection.on("add", this.renderOne, this);
 
-    	$('#country-choose').append(this.render().el);
+    	this.init();
   	},
 
+	init: function() {
+		$('#country-choose').html(this.render().el);
+	},
+
   	render: function () {
+  		$('#country-choose ul').html(''); //BUG FIX?????????
+
 		this.createList();	
 
 		$('.loader').hide();
@@ -23,7 +30,8 @@ var ListView = Backbone.View.extend({
 
 	renderOne: function (country) {
 		var view = new CountryView({
-					model: country
+					model: country,
+					collection: this.collection
 				});
 
 		this.$el.append(view.render().el);
