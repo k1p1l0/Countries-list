@@ -8,3 +8,7 @@ var Info = Backbone.Model.extend({
 	},
 	url: '/country'
 });
+
+Backbone.Model.prototype.delete = function (options) {
+    Backbone.sync("destroy", this, options);
+};

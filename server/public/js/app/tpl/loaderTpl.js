@@ -1,0 +1,1 @@
+tpl['loader'] = '<div class="loader"><span><%= first %></span><span><%= second %></span></div>';

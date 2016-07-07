@@ -1,38 +1,46 @@
 var ListView = Backbone.View.extend({
+	tagName: 'ul',
+
   	initialize: function () {
-    	this.collection.on("reset", this.render, this);
+    	this.loader();
 
     	this.collection.fetch({reset: true});
 
+    	this.collection.on("reset", this.render, this);
     	this.collection.on("add", this.renderOne, this);
 
-    	this.createBody();
+    	$('#country-choose').append(this.render().el);
   	},
 
-	createBody: function () {
-		this.$body = $('<ul></ul>');
-
-		this.$el.append(this.$body);
-	},
-
   	render: function () {
-  		this.createList();	
+		this.createList();	
+
+		$('.loader').hide();
+		$('.container').show();
 
   		return this;
 	},
 
 	renderOne: function (country) {
 		var view = new CountryView({
-				model: country, 
-				el: $('<li></li>')
-			});
+					model: country
+				});
 
-		return this.$body.append(view.render());
+		this.$el.append(view.render().el);
 	},
 
 	createList: function () {
 		this.collection.each((country) => {
 			this.renderOne(country);
 		}, this);		
+	},
+
+	loader: function () {
+		let key = {
+			'first': 'Soft',
+			'second': 'Serve'
+		}
+
+		$('body').append(_.template(tpl['loader'], key));
 	}
 });

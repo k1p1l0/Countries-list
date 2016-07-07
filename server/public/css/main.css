@@ -36,6 +36,7 @@ body {
 
 /* MAIN START */
 .container {
+  display: none;
 	width: 1001px;
 	margin: 0 auto;
 	border: 1px solid #e5e5e5;
@@ -76,10 +77,14 @@ body {
     text-decoration: none;
 }
 
+.del, .edit {
+  display: inline;
+  margin-right: 5px;
+  float: right;
+}
+
 button {
   display: block;
-  padding: 20px 25px;
-  width: 100%;
 }
 
 #country-choose ul li:hover a {
@@ -126,6 +131,7 @@ button {
 }
 
 #country-add table {
+    width: 100%;
     border-collapse: collapse;
 }
 

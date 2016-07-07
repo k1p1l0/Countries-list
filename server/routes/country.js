@@ -29,6 +29,20 @@ router.post('/', function (req, res) {
 	res.sendStatus(200);
 });
 
+router.delete('/:id', function (req, res) {
+	database.delete(req.params.id);
+
+	res.sendStatus(200);
+});
+
+router.delete('/', function (req, res) {
+	console.log('From delete ROUTER')
+	console.log(req.params);
+	database.delete(req.body.id);
+
+	res.sendStatus(200);
+});
+
 router.put('/', function (req, res) {
 	database.add(req.body);
 

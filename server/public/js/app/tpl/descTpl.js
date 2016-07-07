@@ -1,0 +1,2 @@
+tpl['desc'] = '<h1><%= Name %> <button class="del">Delete</button><button class="edit">Edit</button>\
+</h1><p>Capital: <%= Capital %></p><p>Population: <%= Population %></p><p>Continent: <%= Continent %>';
