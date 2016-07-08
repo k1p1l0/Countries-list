@@ -7,11 +7,11 @@ var DescriptionView = Backbone.View.extend({
 	},
 
 	deleteCountry: function () {
+		this.model.destroy();
+
 		this.model.once('destroy', function() {
 			this.collection.remove(this.model.get('cid'));
 		}, this);
-
-		this.model.destroy({url: this.model.url + '/' + this.model.id});
 
 		this.remove();
 	},

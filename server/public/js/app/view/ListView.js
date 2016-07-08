@@ -10,8 +10,9 @@ var ListView = Backbone.View.extend({
 
     	this.collection.fetch({reset: true});
 
-    	this.collection.once("reset", this.render, this);
-    	this.collection.on("add", this.renderOne, this);
+    	this.collection.on("reset", this.render, this);
+
+    	// this.collection.on("add", this.renderOne, this);
     	this.collection.on("remove", this.removeOne, this);
 
     	this.init();
@@ -30,6 +31,12 @@ var ListView = Backbone.View.extend({
 	},
 
   	render: function () {
+  		if (this.countriesView.length > 0) {
+  			this.countriesView.forEach(function(view) {
+  				view.remove();
+  			});
+  		}
+  		
 		this.createList();	
 
 		$('.loader').hide();

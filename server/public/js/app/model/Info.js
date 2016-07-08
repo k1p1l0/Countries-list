@@ -7,6 +7,4 @@ var Info = Backbone.Model.extend({
 	},
 
 	idAttribute: '_id',
-
-	url: '/country'
 });

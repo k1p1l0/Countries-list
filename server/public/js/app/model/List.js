@@ -1,5 +1,6 @@
 var List = Backbone.Collection.extend({
 	model: Info,
+	
 	url: '/country'
 });
 

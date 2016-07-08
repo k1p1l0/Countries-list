@@ -22,12 +22,13 @@ var CountryView = Backbone.View.extend({
 
 	show: function () {
 		//this.$el.addClass('myClass');
+		log(this.model);
 		this.trigger('click', this);
 		
 		$('#country-desc').html(this.descView.render().el)
 	},
 
-	destroy: function() {
+	destroy: function() {	    
 	    // COMPLETELY UNBIND THE VIEW
 	    this.undelegateEvents();
 
