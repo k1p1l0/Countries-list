@@ -1,41 +1,257 @@
-{"Name":"Ukraine","Capital":"Kiev","Continent":"Europe","Population":"43,000,000+","_id":"qLJ3xjNFaLReWWBj"}
-{"Name":"Test","Capital":"test","Continent":"test","Population":"test","_id":"8N0pQziLHBWc1AkN"}
-{"$$deleted":true,"_id":"8N0pQziLHBWc1AkN"}
-{"Name":"Test","Capital":"test","Continent":"test","Population":"test","_id":"z5SdGHopKsSQEUUu"}
-{"$$deleted":true,"_id":"z5SdGHopKsSQEUUu"}
-{"Name":"123","Capital":"123","Continent":"No information","Population":"No information","_id":"IsUDwzP7OehuXXqm"}
-{"$$deleted":true,"_id":"IsUDwzP7OehuXXqm"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"JcBrWcTjnNE9cBRk"}
-{"$$deleted":true,"_id":"JcBrWcTjnNE9cBRk"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"No information","_id":"QxMfvAy5Dv9bKpPh"}
-{"$$deleted":true,"_id":"QxMfvAy5Dv9bKpPh"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"WAMMIzlTX5orn25b"}
-{"$$deleted":true,"_id":"WAMMIzlTX5orn25b"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"AxYchmqyPSZAWHX3"}
-{"$$deleted":true,"_id":"AxYchmqyPSZAWHX3"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"jpMXQ1uaDsD47fr6"}
-{"$$deleted":true,"_id":"jpMXQ1uaDsD47fr6"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"e0bXYMTKex2SVhUj"}
-{"$$deleted":true,"_id":"e0bXYMTKex2SVhUj"}
-{"Name":"123","Capital":"123","Continent":"312","Population":"123","_id":"9MZpYd3FdHroAfXX"}
-{"$$deleted":true,"_id":"9MZpYd3FdHroAfXX"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"cZknWvQdU15EQcQx"}
-{"$$deleted":true,"_id":"cZknWvQdU15EQcQx"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"u37dw3I5wYjiGVr8"}
-{"$$deleted":true,"_id":"u37dw3I5wYjiGVr8"}
-{"Name":"123","Capital":"No information","Continent":"No information","Population":"No information","_id":"dDF1liIEO5r9zHr0"}
-{"$$deleted":true,"_id":"dDF1liIEO5r9zHr0"}
-{"Name":"123","Capital":"No information","Continent":"No information","Population":"No information","_id":"IzuINqnkBLsiXA6W"}
-{"$$deleted":true,"_id":"IzuINqnkBLsiXA6W"}
-{"Name":"13123","Capital":"123","Continent":"123","Population":"123","_id":"XjGgLVrC4Si4NaY1"}
-{"$$deleted":true,"_id":"XjGgLVrC4Si4NaY1"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"9BnnH1EDP0YhmGiP"}
-{"$$deleted":true,"_id":"9BnnH1EDP0YhmGiP"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"sAs1DfELEEqixGD2"}
-{"$$deleted":true,"_id":"sAs1DfELEEqixGD2"}
-{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"6KQrrXPJItTvE2hI"}
-{"$$deleted":true,"_id":"6KQrrXPJItTvE2hI"}
 {"Name":"USA","Capital":"Washington, D.C.","Continent":"North america","Population":"323,625,762","_id":"Cm7q9pvB4J3Gih3c"}
-{"$$deleted":true,"_id":"qLJ3xjNFaLReWWBj"}
-{"Name":"Ujka","Capital":"123","Continent":"123","Population":"213","_id":"OHdQv86rIuQ8jm3w"}
-{"$$deleted":true,"_id":"OHdQv86rIuQ8jm3w"}
+{"Name":"Kiki","Capital":"Kiki","Continent":"Kiki","Population":"No information","_id":"Pjd1qLwbxW2FbzeI"}
+{"$$deleted":true,"_id":"Pjd1qLwbxW2FbzeI"}
+{"Name":"Ki","Capital":"No information","Continent":"No information","Population":"No information","_id":"MTzS6qqrpoLneb9T"}
+{"$$deleted":true,"_id":"MTzS6qqrpoLneb9T"}
+{"Name":"123","Capital":"123","Continent":"123","Population":"123","_id":"s6Nvuwsm3uOaTTxg"}
+{"$$deleted":true,"_id":"s6Nvuwsm3uOaTTxg"}
+{"$$deleted":true,"_id":"Cm7q9pvB4J3Gih3c"}
+{"_id":1,"Name":"USA","Capital":"Washington","Continent":"North america","Population":"4000,0000,0000+"}
+{"_id":"2","Name":"123","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"123","Population":"13"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"213","Capital":"213","Continent":"123","Population":"123"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"123","Population":"123"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"Russia","Capital":"Moscow","Continent":"Asia","Population":"123123213"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"12","Continent":"312","Population":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"123","Population":"123"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"123","Population":"123"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"123","Population":"123"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"123","Capital":"123","Continent":"123","Population":"123123"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"7","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"7"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"5"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"6"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"6"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"4"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"4"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"5"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"7","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"7"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"2"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"7","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"7"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"5"}
+{"$$deleted":true,"_id":"6"}
+{"_id":"2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"3","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"4","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"5","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"_id":"6","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information"}
+{"$$deleted":true,"_id":"6"}
+{"$$deleted":true,"_id":"2"}
+{"$$deleted":true,"_id":"3"}
+{"$$deleted":true,"_id":"4"}
+{"$$deleted":true,"_id":"5"}

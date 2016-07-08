@@ -21,8 +21,20 @@ var CountryView = Backbone.View.extend({
 	},
 
 	show: function () {
-		this.$el.addClass('myClass');
+		//this.$el.addClass('myClass');
+		this.trigger('click', this);
 		
 		$('#country-desc').html(this.descView.render().el)
+	},
+
+	destroy: function() {
+	    // COMPLETELY UNBIND THE VIEW
+	    this.undelegateEvents();
+
+	    this.$el.removeData().unbind(); 
+
+	    // Remove view from DOM
+	    this.remove();  
+	    Backbone.View.prototype.remove.call(this);
 	}
 })

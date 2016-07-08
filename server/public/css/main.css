@@ -34,6 +34,10 @@ body {
           animation-delay: 0.4s;
 }
 
+.anim {
+    animation: pulse 0.4s alternate infinite ease-in-out;
+}
+
 /* MAIN START */
 .container {
   display: none;
@@ -160,6 +164,21 @@ button {
   }
 }
 
+@keyframes back {
+  from {
+    background-color: #25649f;
+    opacity: 0;
+  },
+  to {
+    background-color: white;
+    opacity: 1;
+  }
+}
+
+.anim {
+  animation: back 0.5s alternate ease-in-out;
+}
+
 .hidden {
   display: none;
 }
@@ -168,4 +187,12 @@ button {
   float: right;
   text-decoration: underline;
   color: #0088cc;
+}
+
+.clickable, li.clickable a:hover {
+  background-color: #25649f!important;
+}
+
+.clickable a {
+  color: white!important;
 }
