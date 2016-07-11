@@ -4,7 +4,7 @@ tpl['change'] = '<caption>Add new Country</caption>\
                         <label for="name">Name</label>\
                     </td>\
                     <td>\
-                    	<input type="hidden" name="id" value="<%= _id %>">\
+                    	<input type="hidden" name="_id" value="<%= _id %>">\
                         <input type="text" name="Name" value="<%= Name %>">\
                     </td>\
                 </tr>\

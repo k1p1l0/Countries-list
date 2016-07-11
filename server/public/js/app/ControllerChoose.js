@@ -12,7 +12,9 @@ function ControllerChoose () {
 	});
 
 	mediator.sub('editCountry', (country) => {
-		addView.renderChange(country);
+		new EditView({
+			model: country
+		});
 	});
 
 	return this;

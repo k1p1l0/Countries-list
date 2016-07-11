@@ -20,12 +20,6 @@ var ListView = Backbone.View.extend({
 	},
 
   	render: function () {
-  		if (this.countriesView.length > 0) {
-  			this.countriesView.forEach(function(view) {
-  				view.remove();
-  			});
-  		}
-  		
 		this.createList();	
 
 		$('.loader').hide();
@@ -47,8 +41,6 @@ var ListView = Backbone.View.extend({
 
 			view.$el.addClass('anim');
 		}
-
-		// this.countriesView.push(view);
 
 		view.on('click', (view) => {
 			if (this.previousView) {
