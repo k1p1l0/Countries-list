@@ -9,7 +9,7 @@ var DescriptionView = Backbone.View.extend({
 	deleteCountry: function () {
 		this.model.destroy();
 
-		this.model.once('destroy', function() {
+		this.model.on('destroy', function() {
 			this.collection.remove(this.model.get('cid'));
 		}, this);
 
@@ -18,10 +18,12 @@ var DescriptionView = Backbone.View.extend({
 
 	editCountry: function () {
 		mediator.pub('editCountry', this.model);
+		
+		this.remove();
 	},
 
 	render: function () {
-		this.$el.html(_.template(tpl['desc'], this.model.toJSON()))
+		$('#country-desc').html(this.$el.html(_.template(tpl['desc'], this.model.toJSON())));
 
 		return this;
 	}

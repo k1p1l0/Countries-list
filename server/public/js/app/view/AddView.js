@@ -22,7 +22,6 @@ var AddView = Backbone.View.extend({
 
 		mediator.pub('addCountry', input);
 	},
-
 	
 	render: function () {
 		this.$el.html(this.template());

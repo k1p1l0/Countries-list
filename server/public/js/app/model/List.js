@@ -1,6 +1,10 @@
 var List = Backbone.Collection.extend({
 	model: Info,
 	
+	comparator: function(item) {
+      	return item.get("name");
+    },
+	
 	url: '/country'
 });
 

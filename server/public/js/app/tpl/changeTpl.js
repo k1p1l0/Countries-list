@@ -1,4 +1,4 @@
-tpl['change'] = '<caption>Add new Country</caption>\
+tpl['change'] = '<caption>Edit - <%= Name %></caption>\
 					<tr>\
                     <td>\
                         <label for="name">Name</label>\

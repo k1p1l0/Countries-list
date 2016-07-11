@@ -1,6 +1,8 @@
 var EditView = Backbone.View.extend({
 	tagName: 'table',
 
+	className: 'animEdit',
+
 	template: _.template(tpl['change']),
 
 	events: {
@@ -8,22 +10,20 @@ var EditView = Backbone.View.extend({
 	},
 
 	initialize: function () {
-		$('#country-add').append(this.render().el)
+		$('#country-desc').append(this.render().el)
 	},
 
 	editCountry: function () {
 		var input = {};
 
 		$("input").val((i, val) => {
-			input[$('input').eq(i).attr('name')] = validateInformation(val);
+			input[$('#country-desc input').eq(i).attr('name')] = validateInformation(val);
 		});
 
-		log(input);
-		dir(input);
-
-		this.model.set(input);
-		this.model.save();
+		this.model.set(input).save();
 		
+		this.collection.fetch({reset: true});
+
 		this.remove();
 	},
 

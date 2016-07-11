@@ -123,24 +123,24 @@ button {
 	box-sizing: border-box;
 }
 
-#country-add table caption {
+table caption {
 	text-align: center;
 	font-size: 20px;
 	font-weight: 800;
   margin-top: 20px;
 }
 
-#country-add table {
+table {
     width: 100%;
     border-collapse: collapse;
 }
 
-#country-add td {
+td {
     padding: 10px 15px;
     box-sizing: border-box;
 }
 
-#country-add input[type="text"] {
+input[type="text"] {
 	width: 100%;
 }
 
@@ -176,6 +176,10 @@ button {
   animation: back 0.5s alternate ease-in-out;
 }
 
+.animEdit {
+  animation: edit 0.5s alternate ease-in-out;
+}
+
 .hidden {
   display: none;
 }
@@ -192,4 +196,15 @@ button {
 
 .clickable a {
   color: white!important;
+}
+
+@keyframes edit {
+  from {
+    background-color: #25649f;
+    opacity: 0;
+  },
+  to {
+    background-color: white;
+    opacity: 1;
+  }
 }

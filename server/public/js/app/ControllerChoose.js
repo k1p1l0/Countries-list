@@ -3,6 +3,9 @@ function ControllerChoose () {
 		chooseView = new ListView({
 			collection: Collection
 		}),
+		descView = new DescriptionView({
+			collection: Collection
+		});
 		addView = new AddView({
 			collection: Collection
 		});
@@ -13,7 +16,8 @@ function ControllerChoose () {
 
 	mediator.sub('editCountry', (country) => {
 		new EditView({
-			model: country
+			model: country,
+			collection: Collection
 		});
 	});
 

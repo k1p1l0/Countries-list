@@ -9,11 +9,7 @@ var CountryView = Backbone.View.extend({
 
 	initialize: function () {
 		this.model.on("destroy", this.destroy, this);
-
-		this.descView = new DescriptionView({
-			model: this.model,
-			collection: this.collection
-		});
+		this.collection.on("reset", this.destroy, this);
 	},
 
 	render: function () {
@@ -24,8 +20,6 @@ var CountryView = Backbone.View.extend({
 
 	show: function () {
 		this.trigger('click', this);
-		
-		$('#country-desc').html(this.descView.render().el)
 	},
 
 	destroy: function() {	    

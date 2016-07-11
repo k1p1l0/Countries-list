@@ -8,10 +8,8 @@ var ListView = Backbone.View.extend({
 
     	this.collection.fetch({reset: true});
 
-    	this.collection.once("reset", this.render, this);
+    	this.collection.on("reset", this.render, this);
     	
-    	this.collection.on("add", this.renderOne, this);
-
     	this.init();
   	},
 
@@ -29,10 +27,7 @@ var ListView = Backbone.View.extend({
 	},
 
 	renderOne: function (country, added) {
-		var view = new CountryView({
-					model: country,
-					collection: this.collection
-				});
+		var view = new CountryView({model: country, collection: this.collection});
 
 		if (typeof added === 'object') {
 			setTimeout(() => {
@@ -43,6 +38,11 @@ var ListView = Backbone.View.extend({
 		}
 
 		view.on('click', (view) => {
+			var desc = new DescriptionView({
+				model: view.model,
+				collection: view.collection
+			}).render();
+
 			if (this.previousView) {
 				this.previousView.$el.toggleClass('clickable');
 			}
