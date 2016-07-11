@@ -11,9 +11,7 @@ var AddView = Backbone.View.extend({
 	},	
 
 	addCountry: function() {
-		let input = {
-			"_id": String(this.collection.length + 1)
-		};
+		let input = {};
 
 		$("input").val((i, val) => {
 			input[$('input').eq(i).attr('name')] = validateInformation(val);

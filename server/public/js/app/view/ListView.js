@@ -20,6 +20,12 @@ var ListView = Backbone.View.extend({
 	},
 
   	render: function () {
+  		if (this.countriesView.length > 0) {
+  			this.countriesView.forEach(function(view) {
+  				view.remove();
+  			});
+  		}
+  		
 		this.createList();	
 
 		$('.loader').hide();

@@ -8,7 +8,7 @@ function ControllerChoose () {
 		});
 
 	mediator.sub('addCountry', (country) => {
-		// Alert when we successfully added country
+		Collection.fetch({reset: true});
 	});
 
 	mediator.sub('editCountry', (country) => {

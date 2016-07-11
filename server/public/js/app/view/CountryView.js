@@ -28,7 +28,7 @@ var CountryView = Backbone.View.extend({
 		$('#country-desc').html(this.descView.render().el)
 	},
 
-	destroy: function() {
+	destroy: function() {	    
 	    // COMPLETELY UNBIND THE VIEW
 	    this.undelegateEvents();
 

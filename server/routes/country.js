@@ -4,10 +4,10 @@ var express = require('express'),
 	db = new Datastore({ filename: './db/countries.db', autoload: true });
 
 // // middleware that is specific to this router
-// router.use(function timeLog(req, res, next) {
-//   console.log('Time: ', Date.now());
-//   next();
-// });
+router.use(function timeLog(req, res, next) {
+  console.log('Time: ', Date.now());
+  next();
+});
 
 router.param(['id'], function (req, res, next, value) {
   next();
@@ -20,20 +20,23 @@ router.get('/', function(req, res, next) {
 	});
 });
 
-router.put('/', function (req, res) {
-	db.insert(req.body, function (err, newDoc) {   // Callback is optional
+router.put('/:id', function (req, res) {
+	db.update({ _id: req.params.id }, req.body, {}, function (err, numReplaced) {
 		if (!err) {
-			console.log(newDoc);
 			res.sendStatus(200);
+		} else {
+			console.log(err);
 		}
 	});
+
 });
 
 router.post('/', function (req, res) {
 	db.insert(req.body, function (err, newDoc) {   // Callback is optional
 		if (!err) {
-			console.log(newDoc);
 			res.sendStatus(200);
+		} else {
+			console.log(err);
 		}
 	});
 });
@@ -42,9 +45,10 @@ router.delete('/:id', function (req, res) {
 	db.remove({ _id: req.params.id }, {}, function (err, numRemoved) {
 		if (!err) {
 			res.sendStatus(200);
+		} else {
+			console.log(err);
 		}
 	});
-
 });
 
 module.exports = router;
