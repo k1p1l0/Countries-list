@@ -4,49 +4,28 @@ var ListView = Backbone.View.extend({
 	previousView: '',
 
   	initialize: function () {
-    	this.loader();
-
     	this.collection.fetch({reset: true});
 
-    	this.collection.on("reset", this.render, this);
-    	
-    	this.init();
-  	},
+    	this.collection.once("reset", this.init, this);
 
-	init: function () {
-		$('#country-choose').html(this.render().el);
-	},
+    	this.collection.on("add", this.renderOne, this);
+     },
 
   	render: function () {
-		this.createList();	
-
-		$('.loader').hide();
-		$('.container').show();
+		this.collection.each((country) => {
+			this.renderOne(country);
+		}, this);
 
   		return this;
 	},
 
 	renderOne: function (country, added) {
-		var view = new CountryView({model: country, collection: this.collection});
-
-		if (typeof added === 'object') {
-			setTimeout(() => {
-				view.$el.removeClass('anim');
-			}, 1000);
-
-			view.$el.addClass('anim');
-		}
+		var view = new CountryView({model: country});
 
 		view.on('click', (view) => {
-			var desc = new DescriptionView({
-				model: view.model,
-				collection: view.collection
-			}).render();
-
 			if (this.previousView) {
 				this.previousView.$el.toggleClass('clickable');
-			}
-
+			}			
 			this.previousView = view;
 
 			view.$el.addClass('clickable');
@@ -55,18 +34,7 @@ var ListView = Backbone.View.extend({
 		this.$el.append(view.render().el);
 	},
 
-	createList: function () {
-		this.collection.each((country) => {
-			this.renderOne(country);
-		}, this);		
-	},
-
-	loader: function () {
-		let key = {
-			'first': 'Soft',
-			'second': 'Serve'
-		}
-
-		$('body').append(_.template(tpl['loader'], key));
+	init: function () {
+		mediator.pub('init');
 	}
 });

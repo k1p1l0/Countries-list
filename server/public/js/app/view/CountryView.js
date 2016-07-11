@@ -1,6 +1,8 @@
 var CountryView = Backbone.View.extend({
 	tagName: 'li',
 
+	className: 'anim',
+
 	template: _.template(tpl['list']),
 
 	events: {
@@ -9,7 +11,6 @@ var CountryView = Backbone.View.extend({
 
 	initialize: function () {
 		this.model.on("destroy", this.destroy, this);
-		this.collection.on("reset", this.destroy, this);
 	},
 
 	render: function () {
@@ -19,6 +20,8 @@ var CountryView = Backbone.View.extend({
 	},
 
 	show: function () {
+		mediator.pub('click', this.model);
+		
 		this.trigger('click', this);
 	},
 

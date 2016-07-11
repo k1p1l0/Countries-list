@@ -1,6 +1,8 @@
 var DescriptionView = Backbone.View.extend({
 	tagName: 'div',
 
+	className: 'anim',
+
 	events: {
 		'click .del': 'deleteCountry',
 		'click .edit': 'editCountry'
@@ -9,21 +11,15 @@ var DescriptionView = Backbone.View.extend({
 	deleteCountry: function () {
 		this.model.destroy();
 
-		this.model.on('destroy', function() {
-			this.collection.remove(this.model.get('cid'));
-		}, this);
-
 		this.remove();
 	},
 
 	editCountry: function () {
-		mediator.pub('editCountry', this.model);
-		
-		this.remove();
+		mediator.pub('edit', this.model);		
 	},
 
 	render: function () {
-		$('#country-desc').html(this.$el.html(_.template(tpl['desc'], this.model.toJSON())));
+		this.$el.html(_.template(tpl['desc'], this.model.toJSON()));
 
 		return this;
 	}

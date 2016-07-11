@@ -1,25 +1,60 @@
 function ControllerChoose () {
-	var Collection = new List(),
-		chooseView = new ListView({
-			collection: Collection
-		}),
+	var countries = new List(),
+		listView = new ListView({collection: countries}),
+		addView = new AddView(),
+		$list = $('#country-choose'), $add = $('#country-add'), $desc = $('#country-desc'),
+		descView, descPrev, editView, editPrev;
+
+	mediator.sub('init', init);
+	mediator.sub('add', add);
+	mediator.sub('edit', edit);
+	mediator.sub('click', click);
+
+	function add (country) {
+		// We're adding country in collection but don't trigger about it to other guys(views). Tssss!
+		// We do it only for POST request.
+		// Than we add new country to view from bd with ID!
+		countries.create(country, {silent: true});
+		countries.fetch({remove: false}); // Only add previous country
+	}
+
+	function edit (country) {
+		if (editPrev) {
+			editPrev.remove();
+		}
+
+		editView = new EditView({
+			model: country
+		});
+
+		editPrev = editView;
+
+		$desc.html(editView.render().el);
+	}
+
+	function click (country) {
+		if (descPrev) {
+			descPrev.remove();
+		}
+
 		descView = new DescriptionView({
-			collection: Collection
-		});
-		addView = new AddView({
-			collection: Collection
+			model: country
 		});
 
-	mediator.sub('addCountry', (country) => {
-		Collection.fetch({reset: true});
-	});
+		descPrev = descView;
 
-	mediator.sub('editCountry', (country) => {
-		new EditView({
-			model: country,
-			collection: Collection
-		});
-	});
+		$desc.html(descView.render().el);
+	}
+
+	function init () {
+		setTimeout(() => {
+			$('.loader').hide();
+			$('.container').show();
+		}, 1);
+
+		$add.append(addView.render().el)
+		$list.html(listView.render().el);
+	}
 
 	return this;
 }
