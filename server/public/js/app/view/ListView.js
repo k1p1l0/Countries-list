@@ -1,8 +1,6 @@
 var ListView = Backbone.View.extend({
 	tagName: 'ul',
 
-	countriesView: [],
-
 	previousView: '',
 
   	initialize: function () {
@@ -11,22 +9,14 @@ var ListView = Backbone.View.extend({
     	this.collection.fetch({reset: true});
 
     	this.collection.once("reset", this.render, this);
+    	
     	this.collection.on("add", this.renderOne, this);
-    	this.collection.on("remove", this.removeOne, this);
 
     	this.init();
   	},
 
 	init: function () {
 		$('#country-choose').html(this.render().el);
-	},
-
-	removeOne: function (index) {
-		this.countriesView.forEach(function (view) {
-			if (view.model.cid === index.cid) {
-				view.destroy();
-			}
-		});
 	},
 
   	render: function () {
@@ -47,12 +37,12 @@ var ListView = Backbone.View.extend({
 		if (typeof added === 'object') {
 			setTimeout(() => {
 				view.$el.removeClass('anim');
-			}, 8000);
+			}, 1000);
 
 			view.$el.addClass('anim');
 		}
 
-		this.countriesView.push(view);
+		// this.countriesView.push(view);
 
 		view.on('click', (view) => {
 			if (this.previousView) {

@@ -34,10 +34,6 @@ body {
           animation-delay: 0.4s;
 }
 
-.anim {
-    animation: pulse 0.4s alternate infinite ease-in-out;
-}
-
 /* MAIN START */
 .container {
   display: none;
@@ -166,6 +162,7 @@ button {
 
 @keyframes back {
   from {
+    color: white;
     background-color: #25649f;
     opacity: 0;
   },

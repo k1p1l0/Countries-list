@@ -11,5 +11,9 @@ function ControllerChoose () {
 		// Alert when we successfully added country
 	});
 
+	mediator.sub('editCountry', (country) => {
+		addView.renderChange(country);
+	});
+
 	return this;
 }

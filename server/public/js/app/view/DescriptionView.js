@@ -2,8 +2,8 @@ var DescriptionView = Backbone.View.extend({
 	tagName: 'div',
 
 	events: {
-		'click .del': 'deleteCountry'
-		// 'click .edit': 'editCountry'
+		'click .del': 'deleteCountry',
+		'click .edit': 'editCountry'
 	},
 
 	deleteCountry: function () {
@@ -14,6 +14,10 @@ var DescriptionView = Backbone.View.extend({
 		this.model.destroy({url: this.model.url + '/' + this.model.id});
 
 		this.remove();
+	},
+
+	editCountry: function () {
+		mediator.pub('editCountry', this.model);
 	},
 
 	render: function () {
