@@ -50,7 +50,7 @@ function ControllerChoose () {
 		setTimeout(() => {
 			$('.loader').hide();
 			$('.container').show();
-		}, 1);
+		}, 1000);
 
 		$add.append(addView.render().el)
 		$list.html(listView.render().el);

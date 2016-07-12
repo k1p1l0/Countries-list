@@ -1,7 +1,7 @@
 var DescriptionView = Backbone.View.extend({
 	tagName: 'div',
 
-	className: 'anim',
+	className: 'animOpa',
 
 	events: {
 		'click .del': 'deleteCountry',

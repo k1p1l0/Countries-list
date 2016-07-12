@@ -1,5 +1,6 @@
-tpl['add'] = '<caption>Add new Country</caption>\
-					<tr>\
+tpl['add'] = '<tr>\
+            <th colspan="2"><h1>Add country</h1></th></tr>\
+            <tr>\
                     <td>\
                         <label for="name">Name</label>\
                     </td>\
