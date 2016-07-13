@@ -3,12 +3,18 @@ var ListView = Backbone.View.extend({
 
 	previousView: '',
 
+	collectionView: [], //Insert with sort, but fetch all aray :(
+	
   	initialize: function () {
     	this.collection.fetch({reset: true});
 
-    	this.collection.once("reset", this.init, this);
+    	// this.collection.once("reset", this.init, this);
 
-    	this.collection.on("add", this.renderOne, this);
+    	this.collection.on("reset", this.init, this);
+
+    	// this.collection.once("sort", this.init, this);
+
+    	// this.collection.on("add", this.renderOne, this);
      },
 
   	render: function () {
@@ -21,6 +27,8 @@ var ListView = Backbone.View.extend({
 
 	renderOne: function (country, added) {
 		var view = new CountryView({model: country});
+
+		this.collectionView.push(view);
 
 		view.on('click', (view) => {
 			if (this.previousView) {
@@ -35,6 +43,12 @@ var ListView = Backbone.View.extend({
 	},
 
 	init: function () {
+		if (this.collectionView.length > 0) {
+			this.collectionView.forEach((view) => {
+				view.remove();
+			}, this);
+		}
+
 		mediator.pub('init');
 	}
 });

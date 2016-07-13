@@ -1,7 +1,7 @@
 var CountryView = Backbone.View.extend({
 	tagName: 'li',
 
-	className: 'anim',
+	// className: 'anim',
 
 	template: _.template(tpl['list']),
 

@@ -1,6 +1,8 @@
 function ControllerChoose () {
 	var countries = new List(),
-		listView = new ListView({collection: countries}),
+		listView = new ListView({
+			collection: countries
+		}),
 		addView = new AddView(),
 		$list = $('#country-choose'), $add = $('#country-add'), $desc = $('#country-desc'),
 		descView, descPrev, editView, editPrev;
@@ -14,8 +16,21 @@ function ControllerChoose () {
 		// We're adding country in collection but don't trigger about it to other guys(views). Tssss!
 		// We do it only for POST request.
 		// Than we add new country to view from bd with ID!
-		countries.create(country, {silent: true});
-		countries.fetch({remove: false}); // Only add previous country
+		var options = {
+				silent: true,
+				sort: true
+			};
+
+		var fetchOptions = {
+				success: function (collection, response, options) {
+					log(collection);
+				},
+
+				reset: true
+			};
+
+		countries.create(country, options);
+		countries.fetch(fetchOptions); // Only add previous country
 	}
 
 	function edit (country) {
@@ -52,6 +67,8 @@ function ControllerChoose () {
 			$('.container').show();
 		}, 1000);
 
+		listView.remove();
+		
 		$add.append(addView.render().el)
 		$list.html(listView.render().el);
 	}
