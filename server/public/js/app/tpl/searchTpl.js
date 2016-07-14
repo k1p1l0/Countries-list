@@ -1,0 +1,1 @@
+tpl['search'] = '<input type="text"></input><button class="search">Search</button>'

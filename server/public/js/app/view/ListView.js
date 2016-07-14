@@ -3,12 +3,10 @@ var ListView = Backbone.View.extend({
 
 	previousView: '',
 
-	collectionView: [], //Insert with sort, but fetch all aray :(
+	collectionView: [], //Insert with sort, but we need to fetch all array :(
 	
   	initialize: function () {
     	this.collection.fetch({reset: true});
-
-    	// this.collection.once("reset", this.init, this);
 
     	this.collection.on("reset", this.init, this);
 
@@ -17,7 +15,7 @@ var ListView = Backbone.View.extend({
     	// this.collection.on("add", this.renderOne, this);
      },
 
-  	render: function () {
+  	render: function () {  		
 		this.collection.each((country) => {
 			this.renderOne(country);
 		}, this);
@@ -25,8 +23,14 @@ var ListView = Backbone.View.extend({
   		return this;
 	},
 
-	renderOne: function (country, added) {
-		var view = new CountryView({model: country});
+	renderOne: function (country) {
+		let view = this.createCountryView(country);
+
+		this.$el.append(view.render().el);
+	},
+
+	createCountryView: function (model) {
+		let view = new CountryView({model: model});
 
 		this.collectionView.push(view);
 
@@ -39,7 +43,7 @@ var ListView = Backbone.View.extend({
 			view.$el.addClass('clickable');
 		}, this);
 
-		this.$el.append(view.render().el);
+		return view;
 	},
 
 	init: function () {

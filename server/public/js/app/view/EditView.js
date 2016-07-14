@@ -10,17 +10,19 @@ var EditView = Backbone.View.extend({
 	},
 
 	onEdit: function () {
+		this.model.set(this.validateInputs()).save();	
+
+		mediator.pub('save', this.model);
+	},
+
+	validateInputs: function() {
 		var input = {};
 
 		$("input").val((i, val) => {
 			input[$('#country-desc input').eq(i).attr('name')] = validateInformation(val);
 		});
 
-		this.model.set(input).save();	
-
-		this.remove();		
-
-		mediator.pub('click', this.model);
+		return input;
 	},
 
 	render: function () {

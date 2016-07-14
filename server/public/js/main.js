@@ -11,5 +11,8 @@ $(function() {
 	// 	$('body').append(_.template(tpl['loader'], key));
 	// })();
 
-	new ControllerChoose();
+	new Router();
+
+	Backbone.history.start({pushState: false})
+	// new ControllerChoose();
 });

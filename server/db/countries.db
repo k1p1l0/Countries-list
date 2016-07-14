@@ -1,59 +1,25 @@
-{"Name":"C","Capital":"No information","Continent":"No information","Population":"No information","_id":"GhQE6GURVyWinIgA"}
-{"Name":"A","Capital":"No information","Continent":"No information","Population":"No information","_id":"LgKCwomUCojXo4x5"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"POUijxtnKMwUq8MP"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"lB9CWUlQfm5DrDKk"}
-{"Name":"B","Capital":"No information","Continent":"No information","Population":"No information","_id":"qrr7iYXdBvLW1ZXK"}
-{"$$deleted":true,"_id":"qrr7iYXdBvLW1ZXK"}
-{"$$deleted":true,"_id":"GhQE6GURVyWinIgA"}
-{"$$deleted":true,"_id":"LgKCwomUCojXo4x5"}
-{"$$deleted":true,"_id":"POUijxtnKMwUq8MP"}
-{"$$deleted":true,"_id":"lB9CWUlQfm5DrDKk"}
 {"Name":"A","Capital":"No information","Continent":"No information","Population":"No information","_id":"J13u9CDG9SYmms4Z"}
-{"Name":"B","Capital":"No information","Continent":"No information","Population":"No information","_id":"5W89jbcoPRYjAMvS"}
-{"Name":"C","Capital":"No information","Continent":"No information","Population":"No information","_id":"ksDSRhzsh6vtgSCi"}
-{"Name":"D","Capital":"No information","Continent":"No information","Population":"No information","_id":"YvecxImI2YM33YfA"}
-{"Name":"Ukraine","Capital":"No information","Continent":"No information","Population":"No information","_id":"m96wnAqsGZcqXfKI"}
-{"Name":"A2","Capital":"No information","Continent":"No information","Population":"No information","_id":"zrQqhIEBxeGHFGP1"}
-{"Name":"A3","Capital":"No information","Continent":"No information","Population":"No information","_id":"A2ji9iEhRsntSqwx"}
-{"$$deleted":true,"_id":"A2ji9iEhRsntSqwx"}
-{"$$deleted":true,"_id":"zrQqhIEBxeGHFGP1"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"Bbk5iKiv1HFDocQr"}
-{"Name":"A2","Capital":"No information","Continent":"No information","Population":"No information","_id":"kyh9Jx3hu5Dh6jnW"}
-{"Name":"A3","Capital":"No information","Continent":"No information","Population":"No information","_id":"BLFWXljCVSy3aOG2"}
-{"Name":"A4","Capital":"No information","Continent":"No information","Population":"No information","_id":"GuF3Sjpf133IlF8B"}
-{"Name":"A5","Capital":"No information","Continent":"No information","Population":"No information","_id":"2i3xpL0t84MvtcK7"}
-{"$$deleted":true,"_id":"ksDSRhzsh6vtgSCi"}
-{"$$deleted":true,"_id":"5W89jbcoPRYjAMvS"}
-{"$$deleted":true,"_id":"Bbk5iKiv1HFDocQr"}
-{"$$deleted":true,"_id":"m96wnAqsGZcqXfKI"}
-{"$$deleted":true,"_id":"2i3xpL0t84MvtcK7"}
-{"Name":"A5","Capital":"No information","Continent":"No information","Population":"No information","_id":"JdW5MCGyegTAMnsX"}
-{"Name":"A6","Capital":"No information","Continent":"No information","Population":"No information","_id":"kkijXLAbkVAYUQAb"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"FiMKllgKc0lBcr8Q"}
-{"Name":"A7","Capital":"No information","Continent":"No information","Population":"No information","_id":"A3LUl2Tcx3q9e17O"}
-{"Name":"A8","Capital":"No information","Continent":"No information","Population":"No information","_id":"h5faBw0I17FI5Axt"}
-{"$$deleted":true,"_id":"FiMKllgKc0lBcr8Q"}
-{"$$deleted":true,"_id":"YvecxImI2YM33YfA"}
-{"Name":"A9","Capital":"No information","Continent":"No information","Population":"No information","_id":"qlqv8uydoEEU4CEl"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"zYgATzFvEzdhSVAz"}
-{"$$deleted":true,"_id":"zYgATzFvEzdhSVAz"}
-{"Name":"A33","Capital":"No information","Continent":"No information","Population":"No information","_id":"mnApccex8YqMe0sa"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"fALvXtOFJjfCYDxH"}
-{"$$deleted":true,"_id":"fALvXtOFJjfCYDxH"}
-{"$$deleted":true,"_id":"A3LUl2Tcx3q9e17O"}
-{"$$deleted":true,"_id":"GuF3Sjpf133IlF8B"}
-{"$$deleted":true,"_id":"kkijXLAbkVAYUQAb"}
-{"$$deleted":true,"_id":"h5faBw0I17FI5Axt"}
-{"$$deleted":true,"_id":"qlqv8uydoEEU4CEl"}
-{"Name":"A4","Capital":"No information","Continent":"No information","Population":"No information","_id":"srSW3xS2nmBRCAYp"}
-{"Name":"A44","Capital":"No information","Continent":"No information","Population":"No information","_id":"ZMXWxawLSHKT6otr"}
-{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"qagqcx1nvTogK8RU"}
-{"$$deleted":true,"_id":"qagqcx1nvTogK8RU"}
-{"$$deleted":true,"_id":"JdW5MCGyegTAMnsX"}
-{"$$deleted":true,"_id":"ZMXWxawLSHKT6otr"}
-{"$$deleted":true,"_id":"srSW3xS2nmBRCAYp"}
-{"Name":"Barbara","Capital":"No information","Continent":"No information","Population":"No information","_id":"OdIT60ReSiA7Mfom"}
-{"Name":"A4","Capital":"No information","Continent":"No information","Population":"No information","_id":"p6YjDKcT35jMu3Ow"}
-{"$$deleted":true,"_id":"OdIT60ReSiA7Mfom"}
-{"$$deleted":true,"_id":"p6YjDKcT35jMu3Ow"}
-{"$$deleted":true,"_id":"mnApccex8YqMe0sa"}
+{"Name":"A2","Capital":"No information","Continent":"No information","Population":"No information","_id":"SUgNpkP089RQrli2"}
+{"undefined":"No information","Name":"A3","Capital":"No information","Continent":"No information","Population":"No information","_id":"Wss6P3ckTEUXK73q"}
+{"undefined":"No information","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"cdJPSEeM3XZdTT0s"}
+{"Name":"A4","Capital":"No information","Continent":"No information","Population":"No information","_id":"ga4qPZtURa6h03Js"}
+{"undefined":"A2","Name":"A3","Capital":"ASDasd","Continent":"asdasd","Population":"asdas","_id":"owfHK42czODVMjl0"}
+{"undefined":"No information","Name":"A3","Capital":"No information","Continent":"No information","Population":"No information","_id":"z5Yyas39jO7oCGDN"}
+{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"3W013SaI0fzB0JCu"}
+{"$$deleted":true,"_id":"3W013SaI0fzB0JCu"}
+{"Name":"Ukraine","Capital":"Kiev","Continent":"EU","Population":"No information","_id":"f2FnYV7uxWlvhbT6"}
+{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"Dcfs1mOZ7gpICz8m"}
+{"$$deleted":true,"_id":"cdJPSEeM3XZdTT0s"}
+{"undefined":"A2","Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"owfHK42czODVMjl0"}
+{"Name":"A45","Capital":"No information","Continent":"No information","Population":"No information","_id":"ga4qPZtURa6h03Js","undefined":"No information"}
+{"Name":"No information2","Capital":"No information","Continent":"No information","Population":"No information","_id":"Dcfs1mOZ7gpICz8m","undefined":"No information"}
+{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"ZF0uob0N6FHpwZqf"}
+{"Name":"No information6","Capital":"No information","Continent":"No information","Population":"No information","_id":"ZF0uob0N6FHpwZqf","undefined":"No information"}
+{"undefined":"No information","Name":"No information5","Capital":"No information","Continent":"No information","Population":"No information","_id":"owfHK42czODVMjl0"}
+{"Name":"No information3","Capital":"No information","Continent":"No information","Population":"No information","_id":"Dcfs1mOZ7gpICz8m","undefined":"No information"}
+{"Name":"No information55","Capital":"No information","Continent":"No information","Population":"No information","_id":"Dcfs1mOZ7gpICz8m","undefined":"No information"}
+{"Name":"No information556","Capital":"No information","Continent":"No information","Population":"No information","_id":"Dcfs1mOZ7gpICz8m","undefined":"No information"}
+{"Name":"No information676","Capital":"No information","Continent":"No information","Population":"No information","_id":"ZF0uob0N6FHpwZqf","undefined":"No information"}
+{"Name":"No information67677","Capital":"No information","Continent":"No information","Population":"No information","_id":"ZF0uob0N6FHpwZqf","undefined":"No information"}
+{"$$deleted":true,"_id":"ZF0uob0N6FHpwZqf"}
+{"Name":"No information","Capital":"No information","Continent":"No information","Population":"No information","_id":"6JoeFyCg7fo57Quy"}

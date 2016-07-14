@@ -4,16 +4,19 @@ function ControllerChoose () {
 			collection: countries
 		}),
 		addView = new AddView(),
-		$list = $('#country-choose'), $add = $('#country-add'), $desc = $('#country-desc'),
+		$list = $('#country-choose'), 
+		$add = $('#country-add'), 
+		$desc = $('#country-desc'), 
 		descView, descPrev, editView, editPrev;
 
 	mediator.sub('init', init);
-	mediator.sub('add', add);
-	mediator.sub('edit', edit);
-	mediator.sub('click', click);
+	mediator.sub('add', addCountry);
+	mediator.sub('edit', showEditForm);
+	mediator.sub('click', showCountry);
+	mediator.sub('save', saveCountry);
 
-	function add (country) {
-		// We're adding country in collection but don't trigger about it to other guys(views). Tssss!
+	function addCountry (country) {
+		// We add country in collection but don't trigger about it to other guys(views). Tssss!
 		// We do it only for POST request.
 		// Than we add new country to view from bd with ID!
 		var options = {
@@ -23,7 +26,7 @@ function ControllerChoose () {
 
 		var fetchOptions = {
 				success: function (collection, response, options) {
-					log(collection);
+					// log(collection);
 				},
 
 				reset: true
@@ -33,7 +36,7 @@ function ControllerChoose () {
 		countries.fetch(fetchOptions); // Only add previous country
 	}
 
-	function edit (country) {
+	function showEditForm (country) {
 		if (editPrev) {
 			editPrev.remove();
 		}
@@ -47,7 +50,8 @@ function ControllerChoose () {
 		$desc.html(editView.render().el);
 	}
 
-	function click (country) {
+
+	function showCountry (country) {
 		if (descPrev) {
 			descPrev.remove();
 		}
@@ -61,16 +65,21 @@ function ControllerChoose () {
 		$desc.html(descView.render().el);
 	}
 
-	function init () {
-		setTimeout(() => {
-			$('.loader').hide();
-			$('.container').show();
-		}, 1000);
+	function saveCountry (country) {
+		showCountry(country); //Update desc view
 
-		listView.remove();
-		
-		$add.append(addView.render().el)
-		$list.html(listView.render().el);
+		countries.fetch({reset: true}); // Update list view
+	}
+
+	function init () {
+		// setTimeout(() => {
+		// 	// $('.loader').hide();
+		// 	$('.container').show();
+		// }, 1000);
+		$('.container').show();
+
+		$add.append(addView.render().el);
+		$list.append(listView.render().el);
 	}
 
 	return this;

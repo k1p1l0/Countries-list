@@ -8,13 +8,17 @@ var AddView = Backbone.View.extend({
 	},	
 	
 	addCountry: function() {
+		mediator.pub('add', this.validateInputs());
+	},
+
+	validateInputs: function() {
 		let input = {};
 
 		$("input").val((i, val) => {
 			input[$('input').eq(i).attr('name')] = validateInformation(val);
 		});
 
-		mediator.pub('add', input);
+		return input;
 	},
 	
 	render: function () {
