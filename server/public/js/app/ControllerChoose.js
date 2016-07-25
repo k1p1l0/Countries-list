@@ -7,7 +7,8 @@ function ControllerChoose () {
 		$list = $('#country-choose'), 
 		$add = $('#country-add'), 
 		$desc = $('#country-desc'), 
-		descView, descPrev, editView, editPrev;
+		descView, descPrev, editView, editPrev,
+		state = 'null';
 
 	mediator.sub('init', init);
 	mediator.sub('add', addCountry);
@@ -15,6 +16,7 @@ function ControllerChoose () {
 	// mediator.sub('show', showCountry);
 	mediator.sub('selected', showCountryById);
 	mediator.sub('save', saveCountry);
+	mediator.sub('loaded', loaded);
 
 	function addCountry (country) {
 		// We add country in collection but don't trigger about it to other guys(views). Tssss!
@@ -27,7 +29,7 @@ function ControllerChoose () {
 
 		var fetchOptions = {
 				success: function (collection, response, options) {
-					// log(collection);
+					mediator.pub('loaded', collection);
 				},
 
 				reset: true
@@ -52,9 +54,13 @@ function ControllerChoose () {
 	}
 
 	function showCountryById (id) {
-		var model = countries.get(id);
-		
-		showCountry(model);
+		if (state === 'locountriesaded') {
+			var model = .get(id);
+				
+			showCountry(model);
+		} else {
+			setTimeout( () => showCountryById(id), 100);
+		}
 	}
 
 	function showCountry (country) {
@@ -80,6 +86,10 @@ function ControllerChoose () {
 	function init () {
 		$add.append(addView.render().el);
 		$list.append(listView.render().el);
+	}
+
+	function loaded () {
+		state = 'loaded';
 	}
 
 	return this;

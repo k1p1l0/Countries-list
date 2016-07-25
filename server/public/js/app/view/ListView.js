@@ -6,7 +6,16 @@ var ListView = Backbone.View.extend({
 	collectionView: [], //Insert with sort, but we need to fetch all array :(
 	
   	initialize: function () {
-    	this.collection.fetch({reset: true});
+
+  		var fetchOptions = {
+				success: function (collection, response, options) {
+						mediator.pub('loaded', collection);
+				},
+
+				reset: true
+			};
+
+    	this.collection.fetch(fetchOptions);
 
     	this.collection.on("reset", this.init, this);
      },
