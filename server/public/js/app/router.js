@@ -1,23 +1,25 @@
 var Router = Backbone.Router.extend({
 
-  state: false,
-
   routes: {
-      "": 					      "index",    // #help
-      // "search/:query": 		"search",  // #search/kiwis
+      "":                 "index",
+      "show/:id":         "showDescription"
+  },
+
+  initialize: function () {
+      mediator.sub('selected', this.show.bind(this));
   },
 
   index: function () {
-      this.state = true;
+      this.navigate('');
+  },
 
-      new ControllerChoose();
+  showDescription: function (id) {
+      mediator.pub('selected', id);
+  },
+
+  show: function (id) {
+      mediator.pub('show', id);
+
+      Backbone.history.navigate('show/' + id);
   }
-
-  // search: function (query) { 
-  //     if (!this.state) {
-  //       this.navigate("", {trigger: true});
-  //     }     
-
-  //  	  mediator.pub('search', query);
-  // }
 });

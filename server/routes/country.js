@@ -22,32 +22,31 @@ router.get('/', function(req, res, next) {
 
 router.put('/:id', function (req, res) {
 	db.update({ _id: req.params.id }, req.body, {}, function (err, numReplaced) {
-		if (!err) {
-			res.sendStatus(200);
-		} else {
+		if (err) {
 			console.log(err);
 		}
-	});
 
+		res.sendStatus(200);
+	});
 });
 
 router.post('/', function (req, res) {
 	db.insert(req.body, function (err, newDoc) {   // Callback is optional
-		if (!err) {
-			res.sendStatus(200);
-		} else {
+		if (err) {
 			console.log(err);
 		}
+		
+		res.sendStatus(200);
 	});
 });
 
 router.delete('/:id', function (req, res) {
 	db.remove({ _id: req.params.id }, {}, function (err, numRemoved) {
-		if (!err) {
-			res.sendStatus(200);
-		} else {
+		if (err) {
 			console.log(err);
 		}
+
+		res.sendStatus(200);
 	});
 });
 

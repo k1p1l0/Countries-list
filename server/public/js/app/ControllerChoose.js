@@ -12,7 +12,8 @@ function ControllerChoose () {
 	mediator.sub('init', init);
 	mediator.sub('add', addCountry);
 	mediator.sub('edit', showEditForm);
-	mediator.sub('click', showCountry);
+	// mediator.sub('show', showCountry);
+	mediator.sub('selected', showCountryById);
 	mediator.sub('save', saveCountry);
 
 	function addCountry (country) {
@@ -50,6 +51,11 @@ function ControllerChoose () {
 		$desc.html(editView.render().el);
 	}
 
+	function showCountryById (id) {
+		var model = countries.get(id);
+		
+		showCountry(model);
+	}
 
 	function showCountry (country) {
 		if (descPrev) {
@@ -72,12 +78,6 @@ function ControllerChoose () {
 	}
 
 	function init () {
-		// setTimeout(() => {
-		// 	// $('.loader').hide();
-		// 	$('.container').show();
-		// }, 1000);
-		$('.container').show();
-
 		$add.append(addView.render().el);
 		$list.append(listView.render().el);
 	}

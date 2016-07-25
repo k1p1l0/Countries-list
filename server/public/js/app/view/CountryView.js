@@ -18,7 +18,7 @@ var CountryView = Backbone.View.extend({
 	},
 
 	show: function () {
-		mediator.pub('click', this.model);
+		mediator.pub('selected', this.model.id);
 		
 		this.trigger('click', this);
 	},

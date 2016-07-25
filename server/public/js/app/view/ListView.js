@@ -9,10 +9,6 @@ var ListView = Backbone.View.extend({
     	this.collection.fetch({reset: true});
 
     	this.collection.on("reset", this.init, this);
-
-    	// this.collection.once("sort", this.init, this);
-
-    	// this.collection.on("add", this.renderOne, this);
      },
 
   	render: function () {  		
