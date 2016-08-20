@@ -2,7 +2,6 @@ var express = require('express'),
     path = require('path'),
     favicon = require('serve-favicon'),
     logger = require('morgan'),
-    cookieParser = require('cookie-parser'),
     bodyParser = require('body-parser');
 
 // ROUTES
@@ -60,7 +59,7 @@ app.use(function(err, req, res, next) {
 if (module.parent) {
   module.exports = app;
 } else {
-  app.listen(3000, function () {
+  app.listen(3001, function () {
     console.log('Example app listening on port 3000!');
   });
 }

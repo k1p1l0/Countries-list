@@ -20,6 +20,6 @@ var Router = Backbone.Router.extend({
   show: function (id) {
       mediator.pub('show', id);
 
-      Backbone.history.navigate('show/' + id);
+      this.navigate('show/' + id);
   }
 });

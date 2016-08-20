@@ -13,7 +13,6 @@ function ControllerChoose () {
 	mediator.sub('init', init);
 	mediator.sub('add', addCountry);
 	mediator.sub('edit', showEditForm);
-	// mediator.sub('show', showCountry);
 	mediator.sub('selected', showCountryById);
 	mediator.sub('save', saveCountry);
 	mediator.sub('loaded', loaded);
@@ -54,8 +53,8 @@ function ControllerChoose () {
 	}
 
 	function showCountryById (id) {
-		if (state === 'locountriesaded') {
-			var model = .get(id);
+		if (state === 'loaded') {
+			var model = countries.get(id);
 				
 			showCountry(model);
 		} else {
